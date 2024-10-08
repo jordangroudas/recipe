@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
 }
 
 header {
@@ -27,7 +27,7 @@ header .logo {
 header h1 {
     margin-left: 10px;
     font-family: 'Bebas Neue', cursive;
-    font-size: 36px;
+    font-size: 40px; /* H1 */
 }
 
 nav ul {
@@ -37,12 +37,14 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    font-size: 20px; /* Menu Item */
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 20px; /* NAV A */
 }
 
 .social-media {
@@ -52,6 +54,7 @@ nav ul li a {
 .social-media .icon {
     margin-left: 10px;
     cursor: pointer;
+    width: 20px; /* Social Media Icon Size */
 }
 
 .recipe-header {
@@ -68,6 +71,7 @@ nav ul li a {
 .icons svg {
     margin: 0 10px;
     transition: transform 0.3s;
+    width: 20px; /* Icon Size */
 }
 
 .icons svg:hover {
@@ -84,9 +88,52 @@ nav ul li a {
     height: auto;
 }
 
+p {
+    font-size: 16px; /* Paragraph */
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #0D0D0D;
     color: white;
+    font-size: 20px; /* Footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .recipe-header h2 {
+        font-size: 30px; /* H2 */
+    }
+
+    .recipe-content p {
+        font-size: 16px; /* Paragraph */
+    }
+}
+
+@media (max-width: 414px) {
+    header h1 {
+        font-size: 30px; /* H1 */
+    }
+
+    nav ul li {
+        font-size: 16px; /* Menu Item */
+    }
+
+    footer {
+        font-size: 16px; /* Footer */
+    }
 }
