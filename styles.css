@@ -127,3 +127,33 @@ footer {
         font-size: 16px; /* Footer */
     }
 }
+@media print {
+    @page {
+        margin: 0.5in;
+    }
+
+    body {
+        font-family: serif;
+    }
+
+
+    nav, .avatar, .search {
+        display: none;
+    }
+
+    
+    img {
+        display: none; 
+    }
+
+
+   
+    a:after {
+        content: " (" attr(href) ")";
+    }
+
+    
+    body {
+        overflow: hidden; /* Prevent page overflow */
+/
+}
