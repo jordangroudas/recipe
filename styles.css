@@ -19,12 +19,12 @@ header {
     color: white;
 }
 
-header .logo {
+.logo {
     display: flex;
     align-items: center;
 }
 
-header h1 {
+.logo h1 {
     margin-left: 10px;
     font-family: 'Bebas Neue', cursive;
     font-size: 40px; /* H1 */
@@ -44,22 +44,6 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 20px; /* NAV A */
-}
-
-.social-media {
-    display: flex;
-}
-
-.social-media .icon {
-    margin-left: 10px;
-    cursor: pointer;
-    width: 20px; /* Social Media Icon Size */
-}
-
-.recipe-header {
-    text-align: center;
-    margin: 20px 0;
 }
 
 .icons {
@@ -71,16 +55,16 @@ nav ul li a {
 .icons svg {
     margin: 0 10px;
     transition: transform 0.3s;
-    width: 20px; /* Icon Size */
+    width: 40px; /* Icon Size */
 }
 
 .icons svg:hover {
     transform: scale(1.1);
 }
 
-.recipe-content {
+.recipe-header {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .recipe-image {
@@ -88,8 +72,13 @@ nav ul li a {
     height: auto;
 }
 
-p {
-    font-size: 16px; /* Paragraph */
+.recipe-content {
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 20px;
 }
 
 footer {
@@ -100,7 +89,16 @@ footer {
     font-size: 20px; /* Footer */
 }
 
-/* Responsive Design */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-media svg {
+    margin: 0 10px;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -113,14 +111,6 @@ footer {
 
     nav ul li {
         margin: 5px 0;
-    }
-
-    .recipe-header h2 {
-        font-size: 30px; /* H2 */
-    }
-
-    .recipe-content p {
-        font-size: 16px; /* Paragraph */
     }
 }
 
